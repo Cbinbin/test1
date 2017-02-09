@@ -16,7 +16,7 @@
 	nickname: String,		//昵称
 	sex: String,		//性别
 	headimg: String,		//头像
-
+	origin: String		//籍贯
 }
 ```
 ## 客户( Customer )
@@ -24,8 +24,10 @@
 {
 	openid: String,		//微信Id
 	nickname: String,		//昵称
+	realname: String,		//负责人
 	sex: String,		//性别
 	headimg: String,		//头像
+	origin: String,		//籍贯
 	telephone: Number,		//联系电话
 	company: String,		//公司名称
 	companyLogo: String,		//公司logo
@@ -33,8 +35,8 @@
 	fax: String,		//公司传真
 	seniority: Number,		//服务年限
 	serviceDate: Date,		//服务起始日期
-	onGoing: ObjectId,		//正在进行的项目
-	allProjects: [ ObjectId ],		//所有项目
+	onGoing: [ ObjectId ],		//正在进行的项目( Project )
+	allProjects: [ ObjectId ],		//所有项目( Project )
 	remark: String		//备注信息
 }
 ```
@@ -45,15 +47,17 @@
 	nickname: String,		//昵称
 	sex: String,		//性别
 	headimg: String,		//头像
+	origin: String,		//籍贯
 	position: String,		//职位
 	phone: Number,		//电话
 	QQ: Number,		//QQ
 	signature: String,		//个性签名
 	introduction: String,		//自我介绍
 	status: ['on', 'off'],		//在线状态
+	projectTime: Number,		//项目在线时长(单位:分钟)
 	totalTime: Number,		//在线总时长(单位:分钟)
-	doing: ObjectId,			//正在进行项目
-	participations: [ ObjectId ]		//参与的项目
+	doing: ObjectId,			//正在进行项目( Project )
+	participations: [ ObjectId ]		//参与的项目( Project )
 }
 ```
 ## 项目( Project )
@@ -167,6 +171,7 @@
 ### UI设计图(Design)
 ```js
 {
+
 	designUrl: String
 }
 ```
