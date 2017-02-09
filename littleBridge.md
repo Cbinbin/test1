@@ -24,7 +24,7 @@
 {
 	openid: String,		//微信Id
 	nickname: String,		//昵称
-	realname: String,		//负责人
+	realname: String,		//真实姓名
 	sex: String,		//性别
 	headimg: String,		//头像
 	origin: String,		//籍贯
