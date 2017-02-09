@@ -165,18 +165,26 @@
 }
 ```
 ### UI设计图(Design)
+```js
 {
 	designUrl: String
 }
+```
 ### 开发文档(Document)
+```js
 {
 	writer: String
 }
+```
 ### 头像(Headimg)
+```js
 {
 	headimgUrl: String
 }
+```
 ### 项目图片(Picture)
+```js
 {
 	picUrl: String
 }
+```
