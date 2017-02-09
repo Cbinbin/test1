@@ -172,13 +172,11 @@
 {
 	writer: String
 }
-
-<!-- ### 头像(Headimg)
+### 头像(Headimg)
 {
 	headimgUrl: String
-} -->    
-
-<!-- ### 项目图片(Picture)
+}
+### 项目图片(Picture)
 {
 	picUrl: String
-} -->
+}
